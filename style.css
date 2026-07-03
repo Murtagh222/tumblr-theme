@@ -1,0 +1,172 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://i.postimg.cc/XYdr2dk1/adbcdef.png) repeat;
+  background-size: 1660px 1077px;
+  animation: backgroundScroll 10s linear infinite;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+* {  box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+#wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  height: 90vh;
+}
+
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1660px -1077px;
+  }
+}
+
+#lain {
+  position: absolute;
+  left: -54%;
+  bottom: -3%;
+  height: 103%;
+  aspect-ratio: 1 / 1.5;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 2;
+}
+
+
+
+#container {
+  border: 0.3vw solid black;
+  width: 40%;
+  background: white;
+  aspect-ratio: 5 / 7;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 95vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#sidebar {
+  position:absolute;
+  width: 30%;
+  height: 55%;
+  top: 15%;
+  left: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar .nav1 {
+  height: 33%;
+  width: 100%;
+}
+
+#sidebar img {
+  height: 100%;
+  width: 100%;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#sidebar .nav2 {
+  height: 33%;
+  width: 100%;
+}
+#sidebar .nav3 {
+  height: 33%;
+  width: 100%;
+}
+
+#header {
+  background: rgb(0, 0, 0);
+  width: 100%;
+  height: 19%;
+position: relative;
+top: 0;
+border-bottom: 0.3vw solid rgb(255, 0, 0);
+}
+
+#header-welcome {
+  position: relative;
+  width: 100%;
+  height: 23%;
+  background: rgb(255, 0, 123);
+  top: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1vw;
+}
+
+#header-intro {
+  position: relative;
+  width: 100%;
+  height: 77%;
+  color: #fff;
+  bottom: 0;
+  padding: 0.5vw;
+}
+
+#header-intro p {
+  font-size: 0.9vw;
+  line-height: 1.5vw;
+  font-family: monospace, system-ui;
+  font-weight: normal;
+  margin-right: 6vw;
+}
+
+#header-welcome h2 {
+  color: rgb(0, 255, 213);
+  font-size: 1.6vw;
+  line-height: 2vw;
+  font-family: "Comic Relief", system-ui;
+  font-weight: normal;
+}
+
+#header-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#posts {
+  background: url(https://i.postimg.cc/wTqqgtN1/electricpole.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 81%;
+  overflow-y: auto;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
